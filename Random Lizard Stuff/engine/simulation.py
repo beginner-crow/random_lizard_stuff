@@ -8,8 +8,8 @@ class Simulation:
         self.world = World() 
         self.spacetime = Spacetime() 
         self.systems = [ 
-            MovementSystem(self.world, self.spacetime.clock), 
-            PhysicsSystem(self.world, self.spacetime.clock) ] 
+            PhysicsSystem(self.world, self.spacetime.clock),
+            MovementSystem(self.world, self.spacetime.clock)] 
         self.agents = {} 
         
     def tick(self): 
